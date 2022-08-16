@@ -30,40 +30,42 @@ button{
 
 body{
     font-family: var(--primary-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color:var(--hero-title-color);
+    color: var(--primary-text-color);
 }
+
 
 .logo{
     font-family: var(--secondary-font);
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-         letter-spacing: 0.03em;
          color:var(--logo-color);
-
-}
+    }
 .accent{
     color:var(--accent-color);
 }
-    .menu.menu-link .current{
-            color:var(--accent-color);
-             }
+    
 .menu-link{
-font-family: var(--primary-font);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-     color:var(--primary-text-color);
+     font-weight: 500;
+     line-height: 16px;
+     letter-spacing: 0.02em;
+color:var(--primary-text-color);
 }
 .menu-link:hover,
 .menu-link:focus{
    color:var(--accent-color);
 }
 
+.menu-link.current{
+     color:var(--accent-color);
+ }
+
 .contact-mail{
-    font-family: var(--primary-font);
+        font-style: normal;
         font-weight: 500;
-        font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
       color: var(--secondary-text-color);
@@ -74,9 +76,8 @@ color:var(--accent-color);
 }
 
 .contact-phone-number{
-    font-family: var(--primary-font);
+        font-style: normal;
         font-weight: 500;
-        font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color:var(--secondary-text-color);
@@ -91,7 +92,6 @@ color:var(--accent-color);
     background-color: var(--background-dar-color);
 }
 .hero-title{
-    font-family: var(--primary-font);
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -106,6 +106,19 @@ color:var(--accent-color);
 background-color:var(--accent-color);
 color: var(--hero-title-color);
 }
+
+.button {
+       font-family: var(--primary-font);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color:var(--hero-title-color);
+}
+
 /* section */
 .benefit-list .text,
 .team-list .text{
@@ -124,32 +137,22 @@ color: var(--hero-title-color);
     margin: -1px;
 }
 .section-title{
-font-family: var(--primary-font);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
-     color: var(--primary-text-color);
+    
 }
-.team-list .title{
-    font-family: var(--primary-font);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color:var(--primary-text-color);
-}
-.team-list .text{
-    font-family: var(--primary-font);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
+ .title{
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;   
+ }
+
+ .text{
+        line-height: 1.71;
         color: var(--secondary-text-color);
-}
+ }   
 /* Section team */
 
 .imagene-fone{
@@ -160,6 +163,20 @@ font-family: var(--primary-font);
     background-color: var(--background-cloudy-color);
 }
 
+.title-page{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+         text-align: center;
+        }
+
+.text-page{
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+         color: var(--secondary-text-color);
+}
+
 /* Footer */
 .page-footer{
     background-color: var(--background-dar-color);
@@ -167,31 +184,23 @@ font-family: var(--primary-font);
 
 .logo-footer {
     font-family: var(--secondary-font);
-    sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--hero-title-color);
 }
 
 .adrees-footer{
-    font-family: var(--primary-font);
-    font-style: normal;
+        font-style: normal;
         font-weight: 400;
-        font-size: 14px;
         line-height: 1.71;
-        letter-spacing: 0.03em;
          color: var(--hero-title-color);
 }
 
 .contact-footer{
-    font-family: var(--primary-font);
-    font-style: normal;
+        font-style: normal;
         font-weight: 400;
-        font-size: 14px;
         line-height: 1.71;
-     letter-spacing: 0.03em;
     color: var(--contacts-color);
 }
 
@@ -203,36 +212,28 @@ font-family: var(--primary-font);
 /* portfolio */
 
 .pagemain{
-    font-family: var(--primary-font);
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
         text-align: center;
-        letter-spacing: 0.03em;
-         color:var(--primary-text-color);
         }
 
 .pagemain:hover,
 .pagemain:focus{
     background-color:var(--accent-color);
 color: var(--background-cloudy-color);
-}
+      }
 
 .pagetest{
-    font-family: var(--primary-font);
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        color: var(--primary-text-color);
-    }
+     }
 
 .pagelist{
-    font-family: var(--primary-font);
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.87;
-        letter-spacing: 0.03em;
          color: var(--secondary-text-color);
-}
+    }
